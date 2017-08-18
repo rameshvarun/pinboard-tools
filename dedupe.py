@@ -2,6 +2,10 @@
 import click
 import pinboard
 from collections import defaultdict
+
+import requests_cache
+requests_cache.install_cache()
+
 from mercury_parser.client import MercuryParser
 
 @click.command()
