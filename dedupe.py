@@ -26,6 +26,10 @@ def dedupe(auth_token, mercury_api_key):
 
             by_url[parsed['url']].append(bookmark)
 
+    count = 0
+    for url, items in by_url.items(): count += max(len(items) - 1, 0)
+    print(count, "possible duplicates.")
+
     for url, items in by_url.items():
         if len(items) < 2: continue
         print([i.description for i in items], " point to the same url:", url)
