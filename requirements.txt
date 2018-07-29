@@ -1,3 +1,4 @@
 pinboard==2.1.4
 mercury-parserpy==0.4
 urlextract==0.8.3
+metadata-parser==0.9.21
