@@ -6,12 +6,13 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+black = "*"
 requests = "*"
 urlextract = "*"
 metadata-parser = "*"
 pinboard = "*"
 click = "*"
-black = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.7"
